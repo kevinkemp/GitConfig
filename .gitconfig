@@ -1,0 +1,30 @@
+[user]
+	name = Kevin Kemp
+	email = Kevin.Kemp@ActiveNetwork.com
+[push]
+	default = simple
+[credential]
+	helper = !~/AppData/Roaming/GitCredStore/git-credential-winstore
+[core]
+	autocrlf = true
+	excludesfile = C:\\Users\\kkemp\\Documents\\gitignore_global.txt
+	editor = 'c:/program files/sublime text 3/sublime_text.exe' -w
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --oneline
+	sb = git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+	dt = difftool
+    mt = mergetool
+[diff]
+	tool = bc3
+[difftool]
+	prompt = false
+[difftool "bc3"]
+    path = c:/program files (x86)/beyond compare 3/bcomp.exe
+[merge]
+    tool = bc3
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "bc3"]
+    path = c:/program files/beyond compare 3/bcomp.exe
+    trustExitCode = true

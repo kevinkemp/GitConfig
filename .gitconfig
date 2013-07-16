@@ -52,17 +52,18 @@
 
 	# List aliases
 	la = "!git config -l | grep alias | cut -c 7-"
+
 [diff]
 	tool = bc3
 [difftool]
 	prompt = false
 [difftool "bc3"]
-    path = c:/program files (x86)/beyond compare 3/bcomp.exe
+	cmd = \"c:/program files (x86)/beyond compare 3/bcompare.exe\" \"$LOCAL\" \"$REMOTE\"
 [merge]
-    tool = bc3
+	tool = bc3
 [mergetool]
-    prompt = false
-    keepBackup = false
+	prompt = false
+	keepBackup = false
 [mergetool "bc3"]
-    path = c:/program files/beyond compare 3/bcomp.exe
-    trustExitCode = true
+	cmd = \"c:/program files (x86)/beyond compare 3/bcompare.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true

@@ -29,8 +29,8 @@
 	sl = stash list
 	sa = stash apply
 	ss = stash save
-	vdf = difftool --dir-diff
-	vdfc = difftool --dir-diff --cached
+	vdt = difftool --dir-diff
+	vdtc = difftool --dir-diff --cached
 
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard

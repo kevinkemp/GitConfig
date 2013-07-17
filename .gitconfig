@@ -31,6 +31,7 @@
 	ss = stash save
 	vdt = difftool --dir-diff
 	vdtc = difftool --dir-diff --cached
+	dump = git checkout -- .
 
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard

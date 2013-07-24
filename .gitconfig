@@ -28,7 +28,8 @@
 	rh2 = reset HEAD^^ --hard
 	sl = stash list
 	sa = stash apply
-	ss = stash save
+	sp = stash pop
+	ss = stash save -u
 	vdt = difftool --dir-diff
 	vdtc = difftool --dir-diff --cached
 	dump = checkout -- .

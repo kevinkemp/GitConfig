@@ -33,6 +33,7 @@
 	vdt = difftool --dir-diff
 	vdtc = difftool --dir-diff --cached
 	dump = checkout -- .
+	tack = commit --amend -C HEAD
 
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard

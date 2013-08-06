@@ -2,7 +2,7 @@
 	name = Kevin Kemp
 	email = Kevin.Kemp@ActiveNetwork.com
 [push]
-	default = simple
+	default = upstream
 [credential]
 	helper = !~/AppData/Roaming/GitCredStore/git-credential-winstore
 [core]

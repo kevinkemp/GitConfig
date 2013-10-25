@@ -12,8 +12,8 @@
 [alias]
 	sb = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	dt = difftool
-    mt = mergetool
-
+  mt = mergetool
+  ad = git add -a $(git rev-parse --show-toplevel)
 	st = status
 	ci = commit
 	br = branch

@@ -11,7 +11,7 @@
 	editor = 'c:/program files/sublime text 3/sublime_text.exe' -w
 [alias]
 	sb = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
-	dt = difftool
+	dt = difftool --dir-diff
   mt = mergetool
   ad = !git add -A $(git rev-parse --show-toplevel)
 	st = status

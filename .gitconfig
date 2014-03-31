@@ -71,3 +71,5 @@
 [mergetool "bc3"]
 	cmd = \"c:/program files (x86)/beyond compare 3/bcompare.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
+[init]
+	templatedir = ~/.git_template

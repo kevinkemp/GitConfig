@@ -6,7 +6,7 @@
 [credential]
 	helper = !~/AppData/Roaming/GitCredStore/git-credential-winstore
 [core]
-	autocrlf = true
+	autocrlf = false
 	excludesfile = C:\\Users\\kkemp\\Documents\\gitignore_global.txt
 	editor = 'c:/program files/sublime text 3/sublime_text.exe' -w
 [alias]

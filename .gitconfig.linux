@@ -1,19 +1,18 @@
 [user]
 	name = Kevin Kemp
-	email = Kevin.Kemp@ActiveNetwork.com
+	email = kmkemp11@gmail.com
 [push]
 	default = upstream
 [credential]
 	helper = !~/AppData/Roaming/GitCredStore/git-credential-winstore
 [core]
 	autocrlf = true
-	excludesfile = C:\\Users\\kkemp\\Documents\\gitignore_global.txt
-	editor = 'c:/program files/sublime text 3/sublime_text.exe' -w
+	editor = subl -w
 [alias]
 	sb = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	dt = difftool --dir-diff
-  mt = mergetool
-  ad = !git add -A $(git rev-parse --show-toplevel)
+    mt = mergetool
+    ad = !git add -A $(git rev-parse --show-toplevel)
 	st = status
 	ci = commit
 	br = branch
@@ -58,18 +57,18 @@
 	la = "!git config -l | grep alias | cut -c 7-"
 
 [diff]
-	tool = bc3
+	tool = kdiff3
 [difftool]
 	prompt = false
-[difftool "bc3"]
-	cmd = \"c:/program files (x86)/beyond compare 3/bcompare.exe\" \"$LOCAL\" \"$REMOTE\"
+[difftool "kdiff3"]
+	cmd = kdiff3 \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = bc3
+	tool = kdiff3
 [mergetool]
 	prompt = false
 	keepBackup = false
-[mergetool "bc3"]
-	cmd = \"c:/program files (x86)/beyond compare 3/bcompare.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[mergetool "kdiff3"]
+	cmd = kdiff3 \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
 [init]
 	templatedir = ~/.git_template

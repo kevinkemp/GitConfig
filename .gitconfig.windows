@@ -1,4 +1,3 @@
-<<<<<<< HEAD:.gitconfig.windows
 [user]
 	name = Kevin Kemp
 [push]
@@ -151,5 +150,4 @@
 [init]
 	templatedir = ~/.git_template
 [color]
->>>>>>> 3c9d543aad49e898cf004523323b8f2f8b6d2072:.gitconfig
 	ui = auto

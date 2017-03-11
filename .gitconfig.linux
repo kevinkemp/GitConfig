@@ -7,12 +7,12 @@
 	helper = !~/AppData/Roaming/GitCredStore/git-credential-winstore
 [core]
 	autocrlf = true
-	editor = subl -w
+	editor = code -w
 [alias]
 	sb = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	dt = difftool --dir-diff
     mt = mergetool
-    ad = !git add -A $(git rev-parse --show-toplevel)
+    ad = add
 	st = status
 	ci = commit
 	br = branch
